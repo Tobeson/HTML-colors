@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+  <link rel="stylesheet" href="tag css.css" />
+	<title> select change color</title>
+  </head>
+
+  <body>
+
+	<p> Select Color to :</p>
+
+    <select id="colorlist" onchange="changecolor(container,value)">
+		<option value="white"> </option>
+		<option value="red">RED</option>
+		<option value="blue">BLUE</option>
+		<option value="green">GREEN</option>
+		<option value="yellow">YELLOW</option>
+	</select>
+
+	<script>
+		function changecolor(id,color){
+
+		id.style.backgroundColor=color;
+		}
+	</script>
+
+	 <div id="container">
+		<p>
+
+		</p>
+     </div>
+  </body>
+
+</html>
